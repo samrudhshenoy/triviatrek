@@ -16,6 +16,7 @@ $(function() {
             var appInfo = json.results[0];
 
             // Set favicon 
+			<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
             // Set large app icon using the iOS app ID if it is not set manually in _config.yml
             var $appIconLarge = $(".appIconLarge");
@@ -31,7 +32,7 @@ $(function() {
 
             // Set app name using the iOS app ID if it is not set manually in _config.yml
             var $appName = $(".appName");
-            var $headerName = $(".headerName");
+				var $headerName = $(".headerName");
             if ($.trim($($appName).text()).length == 0) {
                 $($appName).html(appInfo.trackName);
                 $($headerName).html(appInfo.trackName);

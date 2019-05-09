@@ -16,7 +16,7 @@ $(function() {
             var appInfo = json.results[0];
 
             // Set favicon 
-			$(link[rel="shortcut icon"]).attr(href="favicon.ico");
+			$('link[rel="shortcut icon"]').attr("href", appInfo.artworkUrl512);
 			
             // Set large app icon using the iOS app ID if it is not set manually in _config.yml
             var $appIconLarge = $(".appIconLarge");
